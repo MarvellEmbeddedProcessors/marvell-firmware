@@ -48,8 +48,8 @@ jobs:
       - name: Generate ML package
         run: |
           source ${PWD}/artifacts/env
-          mkdir -p "${PWD}"/install/lib/firmware/mrvl/
-          cp -r "${PWD}"/ml/* "${PWD}"/install/lib/firmware/mrvl/.
+          mkdir -p "${PWD}"/install/lib/firmware/
+          cp -r "${PWD}"/ml/* "${PWD}"/install/lib/firmware/.
           mkdir -p "${PWD}/install/DEBIAN"
           cd "${PWD}/install/"
           echo 'Package: ml-firmware-cn10k'${PKG_POSTFIX} >> DEBIAN/control
