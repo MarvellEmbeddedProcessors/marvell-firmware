@@ -111,6 +111,7 @@ jobs:
       - name: Dispatch package update event
         if: ${{ github.event_name == 'push' }}
         run: |
+          sleep 120
           curl -L \
             -X POST \
             -H "Accept: application/vnd.github+json" \
