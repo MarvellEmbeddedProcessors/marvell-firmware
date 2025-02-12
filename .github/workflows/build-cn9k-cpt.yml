@@ -14,7 +14,7 @@ permissions:
 jobs:
   ubuntu-cn9k-package:
     name: ubuntu-cn9k-arm64
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout sources

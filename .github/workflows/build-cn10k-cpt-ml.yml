@@ -1,4 +1,4 @@
-name: package-firmware
+name: package-cn10k-firmware
 
 on:
   push:
@@ -14,7 +14,7 @@ permissions:
 jobs:
   ubuntu-cn10k-package:
     name: ubuntu-cn10k-arm64
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout sources
